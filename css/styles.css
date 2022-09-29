@@ -13,17 +13,14 @@ html, body {
     font-style: normal;
 }
 
-.container{
-    position: relative;
-    max-width: 1440px;
-    margin: 0 auto;
+a {
+    text-decoration: none;
 }
 
 .nav {
-    background: #FFFFFF;
+    background-color: #FFFFFF;
     width: 100%;
     height: 80px;
-    position: absolute;
     padding: 23px 48px;
     display: flex;
     justify-content: space-between;
@@ -36,14 +33,13 @@ html, body {
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
-    text-decoration: none;
 }
 
-a{
-    text-decoration: none;
+.introduction-buttons__container {
+    display: flex;
 }
 
-.button1{
+.introduction-button__demo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,7 +52,7 @@ a{
     margin: 4px;
 }
 
-.button2{
+.introduction-button__log {
     box-sizing: border-box;
     width: 75px;
     height: 40px;
@@ -69,18 +65,23 @@ a{
     align-items: center;
 }
 
-.container-header {
+.lang-icon {
+    border: none;
+    background: none;
+}
+
+.container {
     width: 100%;
     margin: 0;
     height: 850px;
-    background-image: url('./../img/Rectangle (1).svg');
+    background-image: url('../img/main-page_bg.svg');
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
 }
 
-.menu{
+.menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -88,14 +89,14 @@ a{
     width: 70%;
 }
 
-.menu-list {
+.header__nav__link {
     width: 40%;
     display: flex;
     justify-content: space-between;
     list-style-type: none;
 }
 
-.menu-item {
+.nav__link {
     display: flex;
     justify-content: space-between;
     height: 20px;
@@ -104,28 +105,7 @@ a{
 
 }
 
-.Serenity{
-    position: absolute;
-    width: 106px;
-    height: 30px;
-    left: 229px;
-    top: 214px;
-    font-family: Roboto, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 150%;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #1B75BB;
-    opacity: 0.8;
-}
-
-span{
-    color: #1B75BB;
-}
-
-.header__title {
+.main-page__title {
     width: 510px;
     height: 78px;
     font-style: normal;
@@ -136,7 +116,7 @@ span{
     color: #013A4C;
 }
 
-.header__text {
+.main-page__text {
     width: 491px;
     height: 64px;
     font-family: 'Work Sans', sans-serif;
@@ -150,7 +130,7 @@ span{
     margin-bottom: 25px;
 }
 
-.rectangle{
+.rectangle {
     width: 687px;
     height: 110px;
     background: rgba(255, 255, 255, 0.21);
@@ -158,15 +138,15 @@ span{
     border-radius: 10px;
 }
 
-.text{
+.main-page__box {
     margin-left: 144px;
 }
 
-.button{
+.acquisition-buttons__container {
     display: flex;
 }
 
-.button-1{
+.acquisition-buttons__free {
     width: 176px;
     height: 50px;
     background: #FFD063;
@@ -177,7 +157,7 @@ span{
     align-items: center;
 }
 
-.button_text_1{
+.button_text_free {
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -186,11 +166,11 @@ span{
     color: #013A4C;
 }
 
-.button_text_2{
+.button_text_tour {
     color: #FFFFFF;
 }
 
-.button-2{
+.acquisition-buttons__tour {
     box-sizing: border-box;
     background: #013A4C;
     border: 1px solid #013A4C;
@@ -203,7 +183,7 @@ span{
     margin-left: 16px;
 }
 
-.button-3{
+.smart-contracts__tour {
     height: 50px;
     width: 216px;
     display: flex;
@@ -214,8 +194,7 @@ span{
     border-radius: 4px;
 }
 
-.button_text_3{
-    width: 174px;
+.smart-contracts__button-text {
     height: 20px;
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
@@ -225,7 +204,7 @@ span{
     color: #013A4C;
 }
 
-.container-header-2{
+.container-companies {
     width: 100%;
     background: #013A4C;
     height: 288px;
@@ -234,7 +213,7 @@ span{
     align-items: center;
 }
 
-.header2__text{
+.companies__slogan {
     height: 52px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -246,24 +225,24 @@ span{
     text-align: center;
 }
 
-.menu-list-2{
+.companies__list {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
 }
 
-.header-2{
+.companies {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 170px;
 }
 
-.menu-li2{
+.companies__item {
     padding: 16px;
 }
 
-.container-header-3{
+.smart-contracts__block {
     width: 100%;
     background: #013A4C;
     height: 507px;
@@ -271,7 +250,7 @@ span{
     justify-content: space-between;
 }
 
-.header__title-2{
+.smart-contracts__title {
     width: 402px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -282,7 +261,7 @@ span{
     color: #F2DCE4;
 }
 
-.header__text-2{
+.smart-contracts__text {
     height: 84px;
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
@@ -290,19 +269,21 @@ span{
     font-size: 21px;
     line-height: 28px;
     color: #FFFFFF;
+    margin-bottom: 20px;
+    margin-top: 38px;
 }
 
-.text-2{
+.smart-contracts__text-container {
     width: 528px;
     margin: 0 144px;
 }
 
-.img-9{
+.smart-contracts__img {
     width: 501px;
     height: 501px;
 }
 
-.container-header-4{
+.collaborate-container {
     height: 856px;
     background: #013A4C;
     display: flex;
@@ -310,21 +291,21 @@ span{
     padding: 128px;
 }
 
-.collaborate{
+.collaborate-box {
     height: 600px;
     width: 1152px;
     background: #D3E8F4;
     border-radius: 8px;
 }
 
-.collab-text{
+.collaborate-container__text {
     width: 100%;
     height: 478px;
     display: flex;
     justify-content: space-between;
 }
 
-.header__title-3{
+.collaborate__title {
     height: 80px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -335,11 +316,11 @@ span{
     color: #013A4C;
 }
 
-.text-3{
+.collaborate-box__text {
     padding: 64px 91px 78px 96px;
 }
 
-.header__text-3{
+.collaborate__slogan {
     height: 56px;
 
     font-family: 'Work Sans', sans-serif;
@@ -350,7 +331,7 @@ span{
     color: #013A4C;
 }
 
-.button-4{
+.collaborate-button__more {
     height: 40px;
     background: #D3E8F4;
     border: 1px solid #346170;
@@ -361,7 +342,7 @@ span{
     align-items: center;
 }
 
-.menu-item-2{
+.collaborate-button__text {
     height: 18px;
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
@@ -371,53 +352,53 @@ span{
     color: #013A4C;
 }
 
-.img-8{
+.collaborate__racket {
     padding: 60px 0 0 0;
 }
 
-.menu-list-3{
+.collaborate-box__list {
     height: 121px;
     padding: 30px;
     border-bottom: 1px solid #94B4C2
 }
 
-.menu-list_3{
+.collaborate__list {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
 }
 
-.menu-list_4{
+.collaborate__functions {
     padding: 56px 20px;
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    list-style-image: url(/img/Frame7.svg);
+    list-style-image: url(/img/marker.svg);
     color: #013A4C;
 }
 
-.img10{
+.img10 {
     width: 100%;
     height: 100%;
 }
 
-.container-header-6{
+.platform-container {
     width: 100%;
     height: 2432px;
-    background-image: url(./../img/Rectangle12.svg);
+    background-image: url(../img/background-image.platform.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.title-4{
+.platform-box__title {
     display: flex;
     justify-content: center;
     padding: 122px 0 153px 0;
 }
 
-.header__title-4{
+.platform__title {
     width: 830px;
     height: 240px;
     font-family: 'Roboto', sans-serif;
@@ -430,7 +411,7 @@ span{
     color: #013A4C;
 }
 
-.title-5{
+.platform-contracts__title {
     height: 54px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -441,7 +422,7 @@ span{
     color: #013A4C;
 }
 
-.text-5{
+.platform-contracts__text {
     width: 520px;
     height: 72px;
     margin: 30px 0 17px 0;
@@ -453,24 +434,24 @@ span{
     color: #013A4C;
 }
 
-.inform{
+.friction-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin: 0 156px 0 144px;
 }
 
-.container-header-7{
+.believe-container {
     width: 100%;
     height: 850px;
-    background-image: url('./../img/Rectangle (13).svg');
+    background-image: url('../img/background-image.believe.svg');
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
 }
 
-.title-6{
+.believe-box__title {
     height: 78px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -481,7 +462,7 @@ span{
     color: #F2DCE4;
 }
 
-.text-6{
+.believe-box__text {
     width: 470px;
     padding: 31px 0 25px 0;
     font-family: 'Work Sans', sans-serif;
@@ -493,7 +474,7 @@ span{
     color: #FFFFFF;
 }
 
-.button-6{
+.believe-box__button {
     box-sizing: border-box;
     width: 114px;
     height: 40px;
@@ -505,8 +486,7 @@ span{
     align-items: center;
 }
 
-.menu-item-6{
-    width: 80px;
+.believe-box__button-text {
     height: 18px;
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
@@ -516,32 +496,32 @@ span{
     color: #013A4C;
 }
 
-.believe{
-    padding:0 144px;
+.believe-box {
+    padding: 0 144px;
 }
 
-.inform-container{
+.friction-box {
     width: 100%;
     display: flex;
     justify-content: flex-end;
     margin-bottom: 126px;
 }
 
-.inform-container-2{
+.unleash-container {
     width: 100%;
     display: flex;
     justify-content: flex-start;
     margin-bottom: 126px;
 }
 
-.inform-container-3{
+.control-container {
     width: 100%;
     display: flex;
     justify-content: flex-end;
     margin-bottom: 126px;
 }
 
-.button-5{
+.platform-contracts__button {
     background: #013A4C;
     border: 1px solid #013A4C;
     border-radius: 4px;
@@ -553,7 +533,7 @@ span{
     align-items: center;
 }
 
-.menu-item-3{
+.platform-contracts__button-text {
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -563,7 +543,7 @@ span{
     color: #FFFFFF;
 }
 
-.container-header-8{
+.reviews-container {
     width: 100%;
     height: 850px;
     background: #FFFFFF;
@@ -572,7 +552,7 @@ span{
     justify-content: center;
 }
 
-.title-8{
+.reviews-slogan {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -584,7 +564,7 @@ span{
     margin-left: 144px;
 }
 
-.container-reviews{
+.reviews-box__content {
     width: 375px;
     height: 446px;
     box-sizing: border-box;
@@ -596,7 +576,7 @@ span{
     justify-content: space-around;
 }
 
-.text-story-1{
+.reviews-box__text {
     width: 308px;
     height: 120px;
     font-family: 'Work Sans', sans-serif;
@@ -607,7 +587,7 @@ span{
     color: #013A4C;
 }
 
-.read-more{
+.reviews-box__link-text {
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -616,7 +596,7 @@ span{
     color: #89285B;
 }
 
-.name-1{
+.name-1 {
     height: 20px;
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
@@ -626,31 +606,31 @@ span{
     color: #013A4C;
 }
 
-.story{
+.reviews-box {
     display: flex;
     justify-content: space-around;
 }
 
-.story-1{
+.reviews-box__story-manager {
     width: 308px;
     height: 120px;
 }
 
-.story-2{
+.story-2 {
     width: 304px;
     height: 144px;
 }
 
-.container-story{
+.reviews-box__story {
     display: flex;
     justify-content: center;
 }
 
-.link{
+.reviews-box__link {
     margin-top: 10px;
 }
 
-.description{
+.user__description {
     margin-left: 15px;
     list-style-type: none;
     font-family: 'Work Sans', sans-serif;
@@ -661,20 +641,20 @@ span{
     color: #013A4C;
 }
 
-.user-2{
+.user-container {
     display: flex;
     justify-content: flex-start;
     margin-left: 33px;
 }
 
-.container-header-9{
+.container-integrations {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.title-9{
+.integrations-box__title {
     height: 144px;
     width: 387px;
     font-family: 'Roboto', sans-serif;
@@ -686,7 +666,7 @@ span{
     color: #013A4C;
 }
 
-.text-9{
+.integrations-box__text {
     margin-bottom: 19px;
     margin-top: 30px;
     height: 56px;
@@ -699,7 +679,7 @@ span{
     color: #013A4C;
 }
 
-.button-9{
+.integrations-box__button {
     box-sizing: border-box;
     width: 200px;
     height: 50px;
@@ -711,8 +691,7 @@ span{
     align-items: center;
 }
 
-.menu-item-9{
-    width: 128px;
+.integrations-box__button-text {
     height: 20px;
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
@@ -722,24 +701,24 @@ span{
     color: #013A4C;
 }
 
-.container-header-10{
+.blog-container {
     width: 100%;
     height: 1240px;
     background: #FFFFFF;
 }
 
-.header__title-10{
+.blog-container__text {
     display: flex;
     justify-content: space-between;
     margin: 85px 144px;
 }
 
-.block-header{
+.blog-box {
     display: flex;
     justify-content: center;
 }
 
-.title-10{
+.blog-container__title {
     width: 514px;
     height: 54px;
     font-family: 'Roboto', sans-serif;
@@ -751,7 +730,7 @@ span{
     color: #013A4C;
 }
 
-.button-10{
+.blog-container__button {
     width: 146px;
     height: 50px;
     box-sizing: border-box;
@@ -763,7 +742,7 @@ span{
     align-items: center;
 }
 
-.menu-item-10{
+.blog-container__button-text {
     width: 104px;
     height: 20px;
     font-family: 'Work Sans', sans-serif;
@@ -774,14 +753,14 @@ span{
     color: #013A4C;
 }
 
-.block-inform{
+.blog-box__position {
     width: 1152px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.block-1{
+.blog-article {
     width: 100%;
     height: 477px;
     background: #F2DCE4;
@@ -791,14 +770,14 @@ span{
     margin-bottom: 24px;
 }
 
-.inform-block-1{
+.blog-article__information {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin-left: 32px;
 }
 
-.button-11{
+.blog-article__button {
     width: 52px;
     height: 21px;
     background: #B73D8B;
@@ -808,7 +787,7 @@ span{
     align-items: center;
 }
 
-.menu-item-11{
+.blog-article__button-text {
     height: 11px;
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
@@ -818,7 +797,7 @@ span{
     color: #F2DCE4;
 }
 
-.basic{
+.blog-article__text {
     width: 448px;
     height: 216px;
     font-family: 'Roboto', sans-serif;
@@ -830,7 +809,7 @@ span{
     color: #013A4C;
 }
 
-.read-1{
+.blog-article__footer {
     list-style-type: none;
     display: flex;
     font-family: 'Work Sans', sans-serif;
@@ -841,14 +820,14 @@ span{
     color: #013A4C;
 }
 
-.block-2{
+.blog-guide {
     width: 368px;
     height: 444px;
     background: #013A4C;
     border-radius: 8px;
 }
 
-.button-12{
+.blog-guide__button {
     width: 47px;
     height: 21px;
     background: #F2DCE4;
@@ -858,7 +837,7 @@ span{
     align-items: center;
 }
 
-.menu-item-12{
+.blog-guide__button-text {
     height: 11px;
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
@@ -868,7 +847,7 @@ span{
     color: #013A4C;
 }
 
-.guide{
+.blog-guide__text {
     width: 287px;
     height: 64px;
     font-family: 'Roboto', sans-serif;
@@ -882,7 +861,7 @@ span{
     margin-bottom: 69px;
 }
 
-.read-2{
+.blog-guide__footer {
     list-style-type: none;
     height: 16px;
     font-family: 'Work Sans', sans-serif;
@@ -894,11 +873,11 @@ span{
     display: flex;
 }
 
-.inform-block-2{
+.blog-guide__information {
     margin-left: 24px;
 }
 
-.block-3{
+.blog-sweco {
     width: 368px;
     height: 444px;
     background: #0F5987;
@@ -909,7 +888,7 @@ span{
     justify-content: space-around;
 }
 
-.button-13{
+.blog-sweco__button {
     width: 104px;
     height: 21px;
     background: #187BB7;
@@ -919,7 +898,7 @@ span{
     align-items: center;
 }
 
-.menu-item-13{
+.blog-sweco__button-text {
     height: 11px;
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
@@ -929,7 +908,7 @@ span{
     color: #FFFFFF;
 }
 
-.sweco{
+.blog-sweco__title {
 
     width: 124px;
     height: 48px;
@@ -941,7 +920,7 @@ span{
     color: #FFFFFF;
 }
 
-.button-14{
+.blog-sweco__button-bottom {
     box-sizing: border-box;
     width: 135px;
     height: 40px;
@@ -953,7 +932,7 @@ span{
     align-items: center;
 }
 
-.menu-item-14{
+.blog-sweco__button-bottom-text {
     height: 18px;
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
@@ -963,14 +942,14 @@ span{
     color: #FFFFFF;
 }
 
-.block-4{
+.blog-sales {
     width: 368px;
     height: 444px;
     background: #F2DCE4;
     border-radius: 8px;
 }
 
-.guide-2{
+.blog-sales__text {
     width: 296px;
     height: 96px;
     margin-top: 18px;
@@ -984,7 +963,7 @@ span{
     color: #013A4C;
 }
 
-.read-3{
+.blog-sales__footer {
     list-style-type: none;
     height: 16px;
     display: flex;
@@ -996,21 +975,21 @@ span{
     color: #013A4C;
 }
 
-.inform-block-3{
+.blog-sales__information {
     margin: 24px;
 }
 
-.container-header-11{
+.departments-container {
     width: 100%;
     height: 850px;
 }
 
-.inform-11{
+.departments-box {
     display: flex;
     justify-content: space-evenly;
 }
 
-.title-11{
+.departments__title {
     height: 54px;
     margin-left: 144px;
     margin-bottom: 49px;
@@ -1023,13 +1002,13 @@ span{
     color: #013A4C;
 }
 
-.element-1{
+.departments-box__agreement {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.platform{
+.departments__subtitle {
     height: 20px;
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
@@ -1040,7 +1019,7 @@ span{
     color: #013A4C;
 }
 
-.platform-2{
+.departments__text {
     width: 479px;
     height: 80px;
     font-family: 'Roboto', sans-serif;
@@ -1054,7 +1033,7 @@ span{
     margin-top: 22px;
 }
 
-.button-15{
+.departments__button {
     width: 154px;
     box-sizing: border-box;
     height: 50px;
@@ -1066,7 +1045,7 @@ span{
     align-items: center;
 }
 
-.menu-item-15 {
+.departments__button-text {
     height: 20px;
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
@@ -1076,13 +1055,13 @@ span{
     color: #013A4C;
 }
 
-.footer{
+.footer {
     width: 100%;
     height: 676px;
     background-color: #013A4C;
 }
 
-.container-footer{
+.footer-nav__container {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -1090,9 +1069,15 @@ span{
     border-bottom: 1px solid #94B4C2;
 }
 
-.list-inf{
+.footer-nav__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+}
+
+.footer-nav__contacts-list {
     list-style-type: none;
-    height: 20px;
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -1101,12 +1086,12 @@ span{
     color: #FFFFFF;
 }
 
-.list-inf-2{
+.footer-nav__list {
     list-style-type: none;
     line-height: initial;
 }
 
-.inf-1-first{
+.footer-nav__first-item {
     height: 20px;
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
@@ -1117,7 +1102,7 @@ span{
     margin-bottom: 13px;
 }
 
-.inf-2{
+.footer-nav__item {
     height: 20px;
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
@@ -1128,12 +1113,7 @@ span{
     margin-bottom: 13px;
 }
 
-.logo-2{
-    margin-bottom: 65px;
-    margin-top: -100px;
-}
-
-.title-footer{
+.footer-flow__title {
     height: 32px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -1144,7 +1124,7 @@ span{
     color: #FFFFFF;
 }
 
-.send{
+.footer-flow__text {
     width: 367px;
     height: 40px;
     font-family: 'Work Sans', sans-serif;
@@ -1155,7 +1135,7 @@ span{
     color: #FFFFFF;
 }
 
-.button-16{
+.footer-flow__button {
     width: 153px;
     height: 40px;
     background: #FFD063;
@@ -1166,8 +1146,7 @@ span{
     align-items: center;
 }
 
-.menu-item-16{
-
+.footer-flow__button-text {
     height: 18px;
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
@@ -1177,25 +1156,26 @@ span{
     color: #013A4C;
 }
 
-.footer-2{
+.footer-flow__container {
     display: flex;
     width: 50%;
     height: 208px;
     align-items: center;
     justify-content: space-evenly;
 }
-.list-inf-3{
+
+.footer-navigation__list {
     list-style-type: none;
     display: flex;
     margin-left: 67px;
     margin-top: 17px;
 }
 
-.footer-3{
+.footer-navigation {
     border-top: 1px solid #94B4C2;
 }
 
-.inf-3{
+.footer-navigation__item {
     height: 18px;
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
@@ -1206,6 +1186,6 @@ span{
     color: #99B0B7;
 }
 
-.menu-item-17{
+.footer-nav__item-text {
     color: #99B0B7;
 }
